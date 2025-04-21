@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanderlust Ways | Barcelona</title>
+    <style>
+        /* styles.css */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background-color: #3a7bd5;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-style: italic;
+            font-size: 1.2rem;
+        }
+
+        nav {
+            background-color: #2c3e50;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #3a7bd5;
+            text-decoration: underline;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 60px 0;
+            background-color: #edf2f7;
+        }
+
+        .hero h2 {
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-image {
+            max-width: 800px;
+            height: auto;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .content {
+            padding: 40px 0;
+        }
+
+        .intro {
+            max-width: 800px;
+            margin: 0 auto 30px;
+            text-align: center;
+        }
+
+        .intro h3 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+
+        .intro p {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        .highlights {
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .highlights h3 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+
+        .highlights ul {
+            margin-left: 25px;
+        }
+
+        .highlights li {
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+
+        .details-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .details-content h3 {
+            font-size: 1.8rem;
+            margin: 20px 0;
+            color: #2c3e50;
+        }
+
+        .details-content p {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        .details-image {
+            max-width: 600px;
+            height: auto;
+            margin: 20px auto;
+            display: block;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .map-container {
+            width: 100%;
+            height: 400px;
+            margin: 30px 0;
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #3a7bd5;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #2c3e50;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .center-text {
+            text-align: center;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- This is the index.html page -->
+    <header>
+        <div class="container">
+            <h1>Wanderlust Ways</h1>
+            <p>Discovering the world, one city at a time</p>
+        </div>
+    </header>
+    
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Destinations</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Discover Barcelona</h2>
+            <p>Where Gothic enchantment meets Mediterranean warmth - experience the vibrant culture, stunning architecture, and delicious cuisine of Catalonia's capital.</p>
+            <img src="https://via.placeholder.com/800x400" alt="Barcelona Cityscape" class="hero-image">
+        </div>
+    </section>
+
+    <section class="content">
+        <div class="container">
+            <div class="intro">
+                <h3>Why Barcelona Will Capture Your Heart</h3>
+                <p>Barcelona is a city that effortlessly blends the old with the new. Medieval Gothic quarters neighbor the fantastical creations of Antoni Gaudí, while Mediterranean beaches lie just minutes from bustling urban markets. The city pulses with a unique energy that comes from its proud Catalan identity.</p>
+                <p>What makes Barcelona truly special is how it embraces all the senses. The architecture dazzles the eyes, the tapas tantalize the taste buds, street musicians fill the air with melody, and the warm sea breeze carries the scent of saltwater and fresh seafood through the streets. It's a city that demands to be experienced, not just visited.</p>
+            </div>
+
+            <div class="highlights">
+                <h3>Barcelona Must-Visit Highlights</h3>
+                <ul>
+                    <li><strong>La Sagrada Família</strong> - Gaudí's unfinished masterpiece, this breathtaking basilica has been under construction since 1882 and combines Gothic and Art Nouveau elements in ways that defy imagination.</li>
+                    <li><strong>Park Güell</strong> - A whimsical public park designed by Gaudí, featuring colorful mosaics, undulating benches, and panoramic views of the city.</li>
+                    <li><strong>La Boqueria Market</strong> - One of Europe's oldest and largest food markets, offering a feast for the senses with colorful produce, fresh seafood, and local delicacies.</li>
+                </ul>
+            </div>
+
+            <div class="center-text">
+                <a href="details.html" class="btn">Explore La Sagrada Família</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Wanderlust Ways | Barcelona Travel Blog</p>
+        </div>
+    </footer>
+
+    <script>
+        // Adding event listener to switch to details page
+        document.querySelector('.btn').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.body.innerHTML = `
+            <!-- This is the details.html page -->
+            <header>
+                <div class="container">
+                    <h1>Wanderlust Ways</h1>
+                    <p>Discovering the world, one city at a time</p>
+                </div>
+            </header>
+            
+            <nav>
+                <div class="container">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Destinations</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <section class="content">
+                <div class="container">
+                    <div class="details-content">
+                        <h3>La Sagrada Família: Gaudí's Magnificent Vision</h3>
+                        <img src="https://via.placeholder.com/600x300" alt="La Sagrada Família" class="details-image">
+                        
+                        <p>Standing under the soaring columns and stained glass of La Sagrada Família feels like entering another world. This UNESCO World Heritage Site is Antoni Gaudí's magnum opus, a project so ambitious that it remains unfinished nearly 140 years after construction began in 1882. Expected to be completed around 2026, the basilica represents the perfect fusion of Gothic traditions and Gaudí's revolutionary naturalistic style.</p>
+                        
+                        <p>What makes La Sagrada Família truly remarkable is how Gaudí reimagined religious architecture. The interior feels like walking through a stone forest, with tree-like columns that branch near the ceiling to support the weight above. The light streaming through the meticulously designed stained glass windows bathes the space in colored light that changes throughout the day, creating an almost supernatural atmosphere that even non-religious visitors find deeply moving.</p>
+                        
+                        <p>Visitors can explore both the basilica interior and the towers, which offer panoramic views of Barcelona. The museum on the lower level provides fascinating insights into Gaudí's design process, including original drawings and models. For the best experience, book tickets online in advance and consider joining a guided tour to fully appreciate the architectural symbolism and details that might otherwise be missed.</p>
+                        
+                        <div class="map-container">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2992.6788853049005!2d2.172261515419169!3d41.40363597926242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a2dcd83dfb93%3A0x9bd8aac21bc3c950!2sLa%20Sagrada%20Familia!5e0!3m2!1sen!2sus!4v1650000000000!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                        
+                        <div class="center-text">
+                            <a href="#" class="btn back-btn">Back to Home</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer>
+                <div class="container">
+                    <p>&copy; 2025 Wanderlust Ways | Barcelona Travel Blog</p>
+                </div>
+            </footer>
+            `;
+            
+            // Add event listener to the back button
+            document.querySelector('.back-btn').addEventListener('click', function(e) {
+                e.preventDefault();
+                location.reload();
+            });
+        });
+    </script>
+</body>
+</html>
